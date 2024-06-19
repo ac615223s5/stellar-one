@@ -48,7 +48,7 @@ services:
   </div>
   <div class="dark:bg-neutral-800 dark:text-white">
     <h1 class="text-center">Stellar 1</h1>
-    <div class="m-auto grid grid-cols-3 gap-8 w-64 border rounded border-zinc-500 border-solid p-8 shadow">
+    <div class="m-auto grid grid-cols-3 gap-8 w-96 border rounded border-zinc-500 border-solid p-8 shadow">
       {%for service in page.services %}
         <a href={%if service.link%}"{{service.link}}"{%else%}"https://{{service.name}}.agew.tech"{%endif%} class="text-center text-sm">
           <div class="h-16 content-center">
