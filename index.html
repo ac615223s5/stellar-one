@@ -1,0 +1,42 @@
+---
+landing_links:
+  - name: Home
+    link: /
+  - name: placeholder
+    link: /
+  - name: placeholder
+    link: /
+---
+<!DOCTYPE html>
+
+<html lang="en">
+{%include head.html%}
+
+<body class="">
+  <div class="bg-[url('/assets/images/34601401_p0.jpg')] bg-cover bg-fixed h-[95vh] flex flex-col">
+    <div class="intro grow flex flex-col justify-center ml-64">
+      <h1 class="text-8xl text-sky-50">Stellar</h1>
+      <h2 class="text-4xl text-sky-200">Site root</h2>
+      <div class="nav">
+        <div class="flex">
+          {% for item in page.landing_links %}
+          <a href="{{item.link | relative_url}}">
+            <div class="p-4 text-center text-2xl text-sky-100 hover:text-white hover:shadow-[0_0_9px_2px]">
+              {{item.name}}</div>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="bg-[url('/assets/images/curve.png')] bg-[length:auto_100%] h-1/4"></div>
+  </div>
+  <div class="bg-neutral-800">
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+  </div>
+</body>
+
+</html>
