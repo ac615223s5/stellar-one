@@ -6,6 +6,22 @@ landing_links:
     link: /
   - name: placeholder
     link: /
+services:
+- name: searxng
+  icon: searxng.svg
+  link: https://stellar.agew.tech
+- name: redlib
+  icon: redlib.png
+- name: piped
+  icon: piped.svg
+- name: proxitok
+  icon: proxitok.png
+- name: proxigram
+  icon: proxigram.ico
+- name: quetre
+  icon: quetre.png
+- name: rimgo
+  icon: rimgo.png
 ---
 <!DOCTYPE html>
 
@@ -15,7 +31,7 @@ landing_links:
 <body class="">
   <div class="bg-[url('/assets/images/34601401_p0.jpg')] bg-cover bg-fixed h-[95vh] flex flex-col">
     <div class="intro grow flex flex-col justify-center ml-64">
-      <h1 class="text-8xl text-sky-50">Stellar</h1>
+      <h1 class="text-8xl text-sky-50">Stellar One</h1>
       <h2 class="text-4xl text-sky-200">Site root</h2>
       <div class="nav">
         <div class="flex">
@@ -28,14 +44,20 @@ landing_links:
         </div>
       </div>
     </div>
-    <div class="bg-[url('/assets/images/curve.png')] bg-[length:auto_100%] h-1/4"></div>
+    <div class="bg-[url('/assets/images/curvewhite.png')] dark:bg-[url('/assets/images/curve.png')] bg-[length:auto_100%] h-1/4"></div>
   </div>
-  <div class="bg-neutral-800">
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
-    <p>a</p>
+  <div class="dark:bg-neutral-800 dark:text-white">
+    <h1 class="text-center">Stellar 1</h1>
+    <div class="m-auto grid grid-cols-3 gap-8 w-64 border rounded border-zinc-500 border-solid p-8 shadow">
+      {%for service in page.services %}
+        <a href={%if service.link%}"{{service.link}}"{%else%}"https://{{service.name}}.agew.tech"{%endif%} class="text-center text-sm">
+          <div class="h-16 content-center">
+            <img src="/assets/images/services/{{service.icon}}" class="w-full">
+          </div>
+          {{service.name|capitalize}}
+        </a>
+      {%endfor%}
+    </div>
   </div>
 </body>
 
