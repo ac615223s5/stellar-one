@@ -51,7 +51,7 @@ services:
     <div class="m-auto grid grid-cols-3 gap-8 w-96 border rounded border-zinc-500 border-solid p-8 shadow">
       {%for service in page.services %}
         <a href={%if service.link%}"{{service.link}}"{%else%}"https://{{service.name}}.agew.tech"{%endif%} class="text-center text-sm">
-          <div class="h-16 content-center">
+          <div class="aspect-square content-center">
             <img src="/assets/images/services/{{service.icon}}" class="w-full">
           </div>
           {{service.name|capitalize}}
