@@ -2,7 +2,7 @@
 landing_links:
   - name: Home
     link: /
-  - name: placeholder
+  - name: Subway
     link: /
   - name: placeholder
     link: /
@@ -18,8 +18,12 @@ services:
   icon: proxitok.png
 - name: proxigram
   icon: proxigram.ico
+- name: nitter
+  icon: nitter.png
 - name: quetre
   icon: quetre.png
+- name: scribe
+  icon: scribe.png
 - name: rimgo
   icon: rimgo.png
 ---
@@ -47,7 +51,7 @@ services:
     <div class="bg-[url('/assets/images/curvewhite.png')] dark:bg-[url('/assets/images/curve.png')] bg-[length:auto_100%] h-1/4"></div>
   </div>
   <div class="dark:bg-neutral-800 dark:text-white">
-    <h1 class="text-center">Stellar 1</h1>
+    <h1 class="text-center">Terra Station</h1>
     <div class="m-auto grid grid-cols-3 gap-8 w-96 border rounded border-zinc-500 border-solid p-8 shadow">
       {%for service in page.services %}
         <a href={%if service.link%}"{{service.link}}"{%else%}"https://{{service.name}}.agew.tech"{%endif%} class="text-center text-sm">
