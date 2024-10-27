@@ -22,7 +22,7 @@ title: Stellar
 description: >- # this means to ignore newlines until "baseurl:"
   root
 baseurl: ""
-url: "stellar.afs.ovh" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://stellar.afs.ovh" # the base hostname & protocol for your site, e.g. http://example.com
 
 collections_dir: collections
 
