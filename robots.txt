@@ -1,1 +1,1 @@
-Sitemap: agew.tech/sitemap.xml
+Sitemap: https://stellar.afs.ovh/sitemap.xml
