@@ -3,7 +3,7 @@ landing_links:
   - name: Home
     link: /
   - name: Subway
-    link: /
+    link: "#subway"
   - name: placeholder
     link: /
 services:
@@ -33,7 +33,7 @@ services:
 {%include head.html%}
 
 <body class="">
-  <div class="bg-[url('/assets/images/34601401_p0.jpg')] bg-cover bg-fixed h-[95vh] flex flex-col">
+  <div class="bg-[url('/assets/images/34601401_p0.png')] bg-cover bg-fixed h-[95vh] flex flex-col">
     <div class="intro grow flex flex-col justify-center ml-64">
       <h1 class="text-8xl text-sky-50">Stellar One</h1>
       <h2 class="text-4xl text-sky-200">Site root</h2>
@@ -50,9 +50,9 @@ services:
     </div>
     <div class="bg-[url('/assets/images/curvewhite.png')] dark:bg-[url('/assets/images/curve.png')] bg-[length:auto_100%] h-1/4"></div>
   </div>
-  <div class="dark:bg-neutral-800 dark:text-white">
-    <h1 class="text-center">Terra Station</h1>
-    <div class="m-auto grid grid-cols-3 gap-8 w-96 border rounded border-zinc-500 border-solid p-8 shadow">
+  <div class="p-8 bg-[url('/assets/images/flowerz.png')] dark:bg-[url('/assets/images/flowersblue.png')] dark:text-white">
+    <div class="mx-auto grid grid-cols-3 gap-8 w-96 border rounded border-zinc-500 bg-white dark:bg-zinc-800 border-solid p-8">
+      <h1 class="text-center col-span-full" id="subway">Terra Station</h1>
       {%for service in page.services %}
         <a href={%if service.link%}"{{service.link}}"{%else%}"https://{{service.name}}.stellar.afs.ovh"{%endif%} class="text-center text-sm drop-shadow">
           <div class="aspect-square content-center">
